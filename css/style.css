@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  /* Colors */
+
+  /* Primary */
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 62.5rem;
+  height: 25.8rem;
+  background-color: var(--dark-desaturated-blue);
+  display: flex;
+  border-radius: .6rem;
+}
+
+.cardContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+.cardContent h1 {
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 1.65rem;
+  font-size: 2.15rem;
+  font-weight: 700;
+}
+
+.cardContent span {
+  color: var(--soft-violet);
+}
+
+.cardContent p {
+  color: var(--transparent-white);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: .85rem;
+  line-height: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.benefits {
+  display: flex;
+  justify-content: left;
+  gap: 2rem;
+  color: var(--white);
+  font-size: 1.3rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.benefits p {
+  font-size: .68rem;
+  font-weight: 300;
+}
+
+.cardImg {
+  width: 50%;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  background-color: hsl(277, 85%, 30%);
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  opacity: 0.4;
+}
+
+.cardImgMobile {
+  display: none;
+}
+
+footer {
+  background-color: var(--very-dark-blue);
+  text-align: center;
+  padding: .5rem;
+}
+
+.attribution {
+  color: var(--white);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: .8rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--soft-violet);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 46rem;
+    height: 24rem;
+  }
+  
+  .cardContent {
+    width: 50%;
+    padding: 2.5rem;
+  }
+  
+  .cardContent h1 {
+    padding-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .cardContent p {
+    font-size: .8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .benefits {
+    gap: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .benefits p {
+    font-size: .68rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 20rem;
+    height: 43rem;
+    background-color: var(--dark-desaturated-blue);
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: .6rem;
+    margin: 2rem;
+  }
+
+  .cardImg {
+    display: none;
+  }
+
+  .cardContent {
+    width: 100%;
+    height: 70%;
+    padding: 1.5rem;
+    display: flex;
+  }
+
+  .cardContent h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .cardContent p {
+    font-size: .9rem;
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .cardImgMobile {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(277, 85%, 30%);
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+
+  .cardImgMobile img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    opacity: 0.4;
+  }
+
+  .benefits {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+  
+  .benefits p {
+    text-align: center;
+    font-size: .7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 22rem;
+    height: 43rem;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: .6rem;
+    margin: 1rem;
+  }
+
+  .cardImg {
+    display: none;
+  }
+
+  .cardContent {
+    width: 100%;
+    height: 70%;
+    padding: 1.3rem;
+    display: flex;
+  }
+
+  .cardContent h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .cardContent p {
+    font-size: .85rem;
+    text-align: center;
+  }
+
+  .cardImgMobile {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardImgMobile img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .benefits {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+}
