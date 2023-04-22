@@ -4,8 +4,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/stats-preview-card-component-using-html-5-css-and-flexbox-S9uuiPIDZV)
+- [Live Site URL](https://marilisa-saldanha.github.io/stats-preview-card-component/)
 
 ### Built with
 
