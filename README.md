@@ -12,7 +12,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - HTML5
 - CSS
 - Flexbox
-- Mobile-first workflow
 
 ## Author
 
